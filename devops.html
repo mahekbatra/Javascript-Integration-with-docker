@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Devops World</title>
+
+    <script>
+       function docker()
+       {
+        window.location="http://192.168.56.101/doc.html"
+       }
+  
+       function kube()
+       {
+        window.location="http://192.168.56.101/kube.html"
+       }
+   </script>
+
+   <style>
+
+        .container{
+
+
+         position : absolute;
+         width:100%;
+         height:100%;
+         overflow:hidden;
+         background:linear-gradient(90deg,rgba(2,0,.6,1)0%,rgba(9,9,121,1)35%,rgba(0,212,255,1)100%);
+            
+        }
+
+        h1{
+            font-size: 40px;
+            position:relative;
+            left : 200px;
+            top:20px;
+            
+            text-transform :uppercase;
+           letter-spacing:10px;
+        
+            animation: text 4s 1;
+             -webkit-text-stroke: 0.3vw white; 
+          
+            animation-direction:alternate;
+          }
+
+        @keyframes text{
+
+       0%{
+         
+        letter-spacing:0.005px;
+         margin-right:-30px;
+        color:white;
+       
+
+        }
+       50%{
+
+        letter-spacing:7px;
+         margin-right:-30px;
+         color:white;
+          }
+       100%{
+          
+          margin-right: -40px;
+              
+      }
+    }
+
+        h2{
+            
+             font-family: sans-serif;
+             font-weight: bold;
+             width:380px;
+            
+             letter-spacing:3px;
+             background-color:silver;
+             color:#5d4037;
+             position:relative;
+             top:55px;
+             left : 500px;
+         }
+      
+       .btn{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            background-color:#ffbf00;
+            color :#4d0000;
+            padding:13px;
+            border: none;
+            cursor:pointer;
+            font-size: 25px;
+            border-radius: 6px;
+            margin : 20px auto;
+            width: 25%;
+            right :40px;
+            position:relative;
+            left:500px;
+            top:70px;
+            
+           }
+         .btn:hover{
+            color:darkred;
+            background-color:rgb(223, 245, 201);
+            border: 2px solid black;
+         }
+       
+   </style>
+</head>
+
+<body>
+    <div class="container">
+
+    <h1>Welcome to the World of Devops</h1> 
+    </br>
+    <h2>Select any one technology</h2>
+   
+    <button id="b1" class="btn" onclick="docker();">Docker</button>
+    </br>
+    <button id="b2" class="btn" onclick="kube();">Kubernetes</button>
+    </div>
+</html>
+
+</body>
